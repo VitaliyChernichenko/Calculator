@@ -2,6 +2,7 @@ package cherbox.Javax.Massiv.MyCalculator;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 
 /**
  * Created by Виталий on 25.02.2016.
@@ -82,5 +83,28 @@ public class Calculator1 {
     }
     public static void main(String[] args) {
         Calculator1 calm = new Calculator1();
+
     }
+    CalculatorEngine calcEngine = new CalculatorEngine() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            button0.addActionListener(calcEngine);
+            button1.addActionListener(calcEngine);
+            button2.addActionListener(calcEngine);
+            button3.addActionListener(calcEngine);
+            button4.addActionListener(calcEngine);
+            button5.addActionListener(calcEngine);
+            button6.addActionListener(calcEngine);
+            button7.addActionListener(calcEngine);
+            button8.addActionListener(calcEngine);
+            button9.addActionListener(calcEngine);
+            buttonPoint.addActionListener(calcEngine);
+            buttonPlus.addActionListener(calcEngine);
+            buttonEqual.addActionListener(calcEngine);
+            buttonMinus.addActionListener(calcEngine);
+            buttonDivide.addActionListener(calcEngine);
+            buttonMultiplication.addActionListener(calcEngine);
+        }
+    };
+
 }
